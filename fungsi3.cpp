@@ -1,25 +1,16 @@
 #include<iostream>
-#include<string.h>
 using namespace std;
 
-void balik(char,char);
+void balik(string);
 
 int main(){
-    char string[100];
-
-    cout<<"Masukkan Input : ";
-    cin>>input;
-    cout<<"Hasil pembalikan : "<<balik(input,output);
+    string kata;
+    cout<<"Masukkan Kata : ";cin>>kata;
+    balik(kata);
 }
 
-void balik(char input){
-    int counter;
-    counter = strlen(input)-1;
-    while(counter >= 0){
-        cout<<input[counter];
-    }
-    strlwr(input);
-    strcpy(output,input);
-    strrev(output);
-    cout<<output;
+void balik(string kata){
+    //menggunakan fungsi rbegin rend
+    kata=string(kata.rbegin(),kata.rend());
+    cout<<"Hasil Reverse : "<<kata<<endl;
 }
