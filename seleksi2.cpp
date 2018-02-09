@@ -16,6 +16,5 @@ int main(){
         sisa = (40 - n) * 500;
         upah = n * 1000 - sisa;
     }
-    cout<<"Nilai upah : ";
-    cout<<upah;
+    cout<<"Nilai upah : "<<upah<<endl;
 }

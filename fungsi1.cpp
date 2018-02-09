@@ -18,19 +18,9 @@ int main(){
 }
 
 int total(int n){
-    //rekursif
-    if(n == 1){//base case
-		return 1;
-    }
-	else{//rekursif state
-		return n + total(n - 1);
-    }    
-    /*
-    iteratif
     int hasil = 1;
     for(int i = 1;i<n;i++){
         hasil = hasil + i++;
     }    
     return hasil;
-    */
 }
