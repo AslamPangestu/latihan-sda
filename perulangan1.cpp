@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std;
 
-int genap(int);//mendefinisikan fungsi
-
 int main(){
     int n;
     cout << "Masukan n = ";
