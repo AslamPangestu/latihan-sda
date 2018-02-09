@@ -10,13 +10,15 @@ int main(){
         cout<<"Maaf,inputan anda kurang dari 0";
     }else{
         cout << "Deret bilangan ganjil "<<n<<" :\n";
-        for (int i=1;i<=n ;i+=2){
-            cout << i;
-            for(int j=1;j<=n-1;j++);{
-                cout<<" + ";
+        for (int i=1;i<=n ;i++){
+            if(i%2==1){
+                cout << i;
+                hasil += i;
+                if(i < n){
+                    cout<<" + ";
+                }
             }
-            hasil += i;
         }
-        cout<<"Hasil perhitungan : "<<hasil<<endl;
+        cout<<" = "<<hasil<<endl;
     }
 }
