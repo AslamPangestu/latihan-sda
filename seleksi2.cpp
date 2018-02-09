@@ -10,7 +10,7 @@ int main(){
     cin>>n;
     
     if(n > 40){
-        sisa = (n - 40) * 500;
+        sisa = (n - 40) * 2000;
         upah = 40 * 1000 + sisa;
     }else if(n < 40){
         sisa = (40 - n) * 500;
